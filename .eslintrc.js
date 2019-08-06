@@ -4,6 +4,7 @@ module.exports = {
         "es6": true
     },
     "extends": "eslint:recommended",
+		"parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -17,6 +18,7 @@ module.exports = {
     "rules": {
 				"no-mixed-spaces-and-tabs": 0,
 				'no-console': 'off',
+				"strict": 0,
         "indent": [
             "error",
             "tab"
