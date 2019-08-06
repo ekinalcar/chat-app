@@ -16,6 +16,7 @@ module.exports = {
     ],
     "rules": {
 				"no-mixed-spaces-and-tabs": 0,
+				'no-console': 'off',
         "indent": [
             "error",
             "tab"

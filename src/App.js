@@ -13,9 +13,10 @@ class App extends React.Component {
 		chatManager.connect().then(currentUser => {
 			currentUser.subscribeToRoomMultipart({
 				roomId: currentUser.rooms[0].id,
+				messageLimit: 0,
 				hooks: {
 					onMessage: message => {
-            console.log("Received message:", message)
+						console.log('Received message:', message);
 					}
 				}
 			});
